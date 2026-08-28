@@ -9,15 +9,14 @@
 </head>
 <body>
 <div class="topbar"><div class="container">
-  <span>France : Villenoy 77124</span>
-  <span>Côte d’Ivoire : Abidjan • contact@225export.com</span>
+<span>France : Villenoy 77124</span>
+<span>Côte d’Ivoire : Abidjan • contact@225export.com</span>
 </div></div>
-
 <header>
 <div class="container nav">
 <a class="brand" href="index.html">
-  <div class="logo-mark">225</div>
-  <div class="brand-text"><strong>225 EXPORT</strong><small>Acheter en France, livrer en Côte d’Ivoire.</small></div>
+<div class="logo-mark">225</div>
+<div class="brand-text"><strong>225 EXPORT</strong><small>Acheter en France, livrer en Côte d’Ivoire.</small></div>
 </a>
 <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 <nav class="navlinks">
@@ -26,12 +25,12 @@
 <a href="services.html">Services</a>
 <a href="produits.html">Produits</a>
 <a href="destinations.html">Destinations</a>
+<a href="colis-france-cote-ivoire.html">Colis France → Côte d’Ivoire</a>
 <a href="contact.html">Contact</a>
 <a class="nav-cta" href="devis.html">Demander un devis</a>
 </nav>
 </div>
 </header>
-
 <main>
 <section class="page-hero">
 <div class="container">
@@ -78,7 +77,7 @@
 <div class="kicker">Notre processus</div>
 <h2>De la France à Abidjan en 6 étapes</h2>
 </div>
-<div class="process">
+<div class="process" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
 <div class="step"><strong>01</strong><h3>Demande</h3><p>Vous décrivez votre colis et votre destination.</p></div>
 <div class="step"><strong>02</strong><h3>Analyse</h3><p>Nous étudions nature, poids, volume et valeur.</p></div>
 <div class="step"><strong>03</strong><h3>Devis</h3><p>Une estimation est préparée selon la solution retenue.</p></div>
@@ -96,40 +95,33 @@
 <h2>Décrivez votre expédition</h2>
 <p>Plus les informations sont précises, plus l’étude de votre demande sera fiable.</p>
 </div>
-  <form class="card" id="quote-form">
-
+<form class="card" id="quote-form">
 <div class="form-grid">
-
 <div class="field">
 <label for="nom">Nom complet *</label>
 <input id="nom" name="Nom" type="text"
 placeholder="Votre nom et prénom" required>
 </div>
-
 <div class="field">
 <label for="telephone">Téléphone *</label>
 <input id="telephone" name="Téléphone" type="tel"
 placeholder="+33..." required>
 </div>
-
 <div class="field">
 <label for="email">E-mail *</label>
 <input id="email" name="Email" type="email"
 placeholder="vous@exemple.com" required>
 </div>
-
 <div class="field">
 <label for="depart">Ville de départ en France *</label>
 <input id="depart" name="Départ"
 placeholder="Ex. Paris" required>
 </div>
-
 <div class="field">
 <label for="destination">Ville de destination *</label>
 <input id="destination" name="Destination"
 value="Abidjan" required>
 </div>
-
 <div class="field">
 <label for="marchandise">Type de marchandise *</label>
 <select id="marchandise" name="Marchandise" required>
@@ -143,31 +135,26 @@ value="Abidjan" required>
 <option>Autre</option>
 </select>
 </div>
-
 <div class="field">
 <label for="nombre">Nombre de colis *</label>
 <input id="nombre" name="Nombre de colis"
 type="number" min="1" placeholder="Ex. 2" required>
 </div>
-
 <div class="field">
 <label for="poids">Poids total estimé *</label>
 <input id="poids" name="Poids"
 placeholder="Ex. 25 kg" required>
 </div>
-
 <div class="field">
 <label for="dimensions">Dimensions</label>
 <input id="dimensions" name="Dimensions"
 placeholder="Ex. 60 × 40 × 40 cm">
 </div>
-
 <div class="field">
 <label for="valeur">Valeur déclarée *</label>
 <input id="valeur" name="Valeur"
 placeholder="Ex. 500 €" required>
 </div>
-
 <div class="field full">
 <label for="mode">Mode de transport souhaité *</label>
 <select id="mode" name="Mode" required>
@@ -177,7 +164,6 @@ placeholder="Ex. 500 €" required>
 <option>Fret maritime</option>
 </select>
 </div>
-
 <div class="field full">
 <label for="documents">Documents disponibles</label>
 <select id="documents" name="Documents">
@@ -187,7 +173,6 @@ placeholder="Ex. 500 €" required>
 <option>Autres documents</option>
 </select>
 </div>
-
 <div class="field full">
 <label for="description">Description précise du contenu *</label>
 <textarea id="description"
@@ -196,7 +181,6 @@ rows="5"
 placeholder="Décrivez précisément le contenu du ou des colis."
 required></textarea>
 </div>
-
 <div class="field full">
 <label class="check-row">
 <input type="checkbox"
@@ -210,21 +194,16 @@ soumises à des restrictions ou formalités particulières.
 </span>
 </label>
 </div>
-
 <div class="field full">
 <button class="btn btn-primary" type="submit">
 Demander mon devis
 </button>
-
 <div id="form-message" class="notice"></div>
 </div>
-
 </div>
 </form>
-
 </div>
 </section>
-
 
 <section class="section alt">
 <div class="container">
@@ -240,9 +219,7 @@ Demander mon devis
 </div>
 </section>
 </main>
-
-<a class="floating" href="contact.html" aria-label="Contacter 225 Export">WA</a>
-
+<a class="floating" href="contact.html" aria-label="Nous contacter">☏</a>
 <footer>
 <div class="container">
 <div class="footer-grid">
