@@ -97,6 +97,131 @@
 <p>Plus les informations sont précises, plus l’étude de votre demande sera fiable.</p>
 </div>
 <form class="card" id="quote-form">
+
+  <div class="form-grid">
+
+    <div class="field">
+      <label for="nom">Nom complet *</label>
+      <input id="nom" name="Nom" type="text"
+             placeholder="Votre nom et prénom" required>
+    </div>
+
+    <div class="field">
+      <label for="telephone">Téléphone *</label>
+      <input id="telephone" name="Téléphone" type="tel"
+             placeholder="+33..." required>
+    </div>
+
+    <div class="field">
+      <label for="email">E-mail *</label>
+      <input id="email" name="Email" type="email"
+             placeholder="vous@exemple.com" required>
+    </div>
+
+    <div class="field">
+      <label for="depart">Ville de départ en France *</label>
+      <input id="depart" name="Départ"
+             placeholder="Ex. Paris" required>
+    </div>
+
+    <div class="field">
+      <label for="destination">Ville de destination *</label>
+      <input id="destination" name="Destination"
+             value="Abidjan" required>
+    </div>
+
+    <div class="field">
+      <label for="marchandise">Type de marchandise *</label>
+      <select id="marchandise" name="Marchandise" required>
+        <option value="">Sélectionnez...</option>
+        <option>Colis personnel</option>
+        <option>Vêtements / chaussures</option>
+        <option>Électroménager</option>
+        <option>Matériel informatique</option>
+        <option>Pièces automobiles</option>
+        <option>Matériel de construction</option>
+        <option>Autre</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="nombre">Nombre de colis *</label>
+      <input id="nombre" name="Nombre de colis"
+             type="number" min="1" placeholder="Ex. 2" required>
+    </div>
+
+    <div class="field">
+      <label for="poids">Poids total estimé *</label>
+      <input id="poids" name="Poids"
+             placeholder="Ex. 25 kg" required>
+    </div>
+
+    <div class="field">
+      <label for="dimensions">Dimensions</label>
+      <input id="dimensions" name="Dimensions"
+             placeholder="Ex. 60 × 40 × 40 cm">
+    </div>
+
+    <div class="field">
+      <label for="valeur">Valeur déclarée *</label>
+      <input id="valeur" name="Valeur"
+             placeholder="Ex. 500 €" required>
+    </div>
+
+    <div class="field full">
+      <label for="mode">Mode de transport souhaité *</label>
+      <select id="mode" name="Mode" required>
+        <option value="">Sélectionnez...</option>
+        <option>Je souhaite une recommandation</option>
+        <option>✈️ Fret aérien</option>
+        <option>🚢 Fret maritime</option>
+      </select>
+    </div>
+
+    <div class="field full">
+      <label for="documents">Documents disponibles</label>
+      <select id="documents" name="Documents">
+        <option>Je ne sais pas encore</option>
+        <option>Facture disponible</option>
+        <option>Justificatif disponible</option>
+        <option>Autres documents</option>
+      </select>
+    </div>
+
+    <div class="field full">
+      <label for="description">Description précise du contenu *</label>
+      <textarea id="description"
+                name="Description"
+                rows="5"
+                placeholder="Décrivez précisément le contenu du ou des colis."
+                required></textarea>
+    </div>
+
+    <div class="field full">
+      <label class="check-row">
+        <input type="checkbox"
+               name="Conditions"
+               value="Acceptées"
+               required>
+        <span>
+          Je confirme que les informations fournies sont exactes
+          et comprends que certaines marchandises peuvent être
+          soumises à des restrictions ou formalités particulières.
+        </span>
+      </label>
+    </div>
+
+    <div class="field full">
+      <button class="btn btn-primary" type="submit">
+        Demander mon devis
+      </button>
+
+      <div id="form-message" class="notice"></div>
+    </div>
+
+  </div>
+
+</form>
 <div class="form-grid">
 <div class="field"><label>Nom complet</label><input name="Nom" required></div>
 <div class="field"><label>Téléphone</label><input name="Téléphone" required></div>
