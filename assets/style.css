@@ -32,6 +32,8 @@ footer .logo-mark{width:148px;height:84px}
 .brand-text strong{display:block;font-size:23px;letter-spacing:1.5px}
 .brand-text small{font-size:11px;color:#C9D4E8}
 .navlinks{display:flex;align-items:center;gap:22px;font-weight:700;font-size:14px}
+/* nav-serre : evite le debordement du menu sur les ecrans intermediaires */
+@media(min-width:961px) and (max-width:1180px){.navlinks{gap:13px;font-size:13px}}
 .navlinks a:hover,.navlinks a.active{color:var(--orange)}
 .nav-cta{padding:12px 17px;border-radius:11px;background:var(--orange);color:#fff}
 .menu-btn{display:none;background:none;border:0;color:#fff;font-size:28px}
@@ -64,6 +66,16 @@ h1 span,.accent{color:var(--orange)}
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:27px;box-shadow:0 10px 32px rgba(13,27,61,.07)}
 .card h3{color:var(--navy);margin:12px 0 9px}
+@keyframes trace{to{stroke-dashoffset:0}}
+.icon svg,.product-visual svg{overflow:visible}
+.icon svg.trace>*,.product-visual svg.trace>*{animation:trace .9s cubic-bezier(.4,0,.2,1) forwards}
+.card{transition:transform .2s ease,box-shadow .2s ease}
+.card:hover .icon,.card:hover .product-visual svg{transform:translateY(-3px)}
+.icon,.product-visual svg{transition:transform .25s ease}
+@media(prefers-reduced-motion:reduce){
+ .icon svg.trace>*,.product-visual svg.trace>*{animation:none;stroke-dashoffset:0!important}
+ .card:hover .icon,.card:hover .product-visual svg{transform:none}
+}
 .icon{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;background:#EEF3FB;font-size:25px}
 .product-card{overflow:hidden;padding:0}
 .product-visual{height:170px;background:linear-gradient(135deg,#EAF0F8,#D8E2F1);display:grid;place-items:center;font-size:58px}
