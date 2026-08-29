@@ -94,7 +94,6 @@ h1 span,.accent{color:var(--orange)}
 .grid-4 .product-card:nth-child(even) .product-visual svg{stroke:var(--navy)!important}
 .product-card .content{padding:22px}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
-.visual-box{border-radius:28px;width:100%;aspect-ratio:1717/916;background:url('visuel-port.jpg') center/contain no-repeat #EAF0F8;box-shadow:var(--shadow)}
 .checks{display:grid;gap:14px}
 .check{display:flex;gap:13px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 17px}
 .check span{width:28px;height:28px;border-radius:50%;background:#E9F7F1;color:var(--success);display:grid;place-items:center;font-weight:900;flex:none}
