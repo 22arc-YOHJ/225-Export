@@ -99,7 +99,7 @@ footer h4{color:#fff;margin-top:0}
 footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 footer a:hover{color:var(--orange)}
 .copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:22px;font-size:13px;color:#98A7C0}
-.floating{position:fixed;right:20px;bottom:20px;z-index:50;background:#21A366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.22);font-size:24px}
+.floating{position:fixed;right:20px;bottom:20px;z-index:50;background:var(--orange);color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.22);font-size:24px}
 @media(max-width:960px){
  .navlinks{display:none;position:absolute;top:78px;left:0;right:0;background:var(--navy);padding:20px 4%;flex-direction:column;align-items:flex-start}
  .navlinks.open{display:flex}
