@@ -70,6 +70,13 @@ h1 span,.accent{color:var(--orange)}
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:27px;box-shadow:0 10px 32px rgba(13,27,61,.07)}
 .card h3{color:var(--navy);margin:12px 0 9px}
+.etiq{display:inline-block;background:var(--orange);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:99px;margin-bottom:14px}
+.card.phare{background:linear-gradient(135deg,var(--navy),var(--navy-2));border-color:transparent;color:#fff;box-shadow:0 16px 42px rgba(13,27,61,.22)}
+.card.phare h3{color:#fff;font-size:21px;margin-top:14px}
+.card.phare p{color:#DCE5F3}
+.card.phare .icon{background:rgba(255,255,255,.13)}
+.card.phare a{color:var(--orange-2)}
+.card.accent{border-color:var(--orange);box-shadow:0 10px 32px rgba(245,130,32,.16)}
 @keyframes trace{to{stroke-dashoffset:0}}
 .icon svg,.product-visual svg{overflow:visible}
 .icon svg.trace>*,.product-visual svg.trace>*{animation:trace .9s cubic-bezier(.4,0,.2,1) forwards}
