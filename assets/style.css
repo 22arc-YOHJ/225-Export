@@ -37,7 +37,7 @@ footer .logo-mark{width:148px;height:84px}
 .menu-btn{display:none;background:none;border:0;color:#fff;font-size:28px}
 .hero{position:relative;overflow:hidden;color:#fff;background:
 linear-gradient(105deg,rgba(8,20,46,.98) 0%,rgba(13,27,61,.9) 50%,rgba(13,27,61,.62) 100%),
-url('a_clean_dark_blue_professional_brand_kit_presentat.png') center/cover no-repeat}
+url('hero.jpg') center/cover no-repeat}
 .hero::after{content:"";position:absolute;width:520px;height:520px;border:80px solid rgba(245,130,32,.12);border-radius:50%;right:-160px;bottom:-260px}
 .hero-grid{min-height:690px;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;padding:90px 0;position:relative;z-index:2}
 .kicker{font-size:13px;text-transform:uppercase;letter-spacing:2px;color:var(--orange);font-weight:900}
@@ -71,7 +71,7 @@ h1 span,.accent{color:var(--orange)}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
 .visual-box{border-radius:28px;min-height:430px;background:
 linear-gradient(rgba(13,27,61,.15),rgba(13,27,61,.15)),
-url('a_high_resolution_corporate_brochure_layout_spread.png') center/cover no-repeat;box-shadow:var(--shadow)}
+url('visuel-port.jpg') center/cover no-repeat;box-shadow:var(--shadow)}
 .checks{display:grid;gap:14px}
 .check{display:flex;gap:13px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 17px}
 .check span{width:28px;height:28px;border-radius:50%;background:#E9F7F1;color:var(--success);display:grid;place-items:center;font-weight:900;flex:none}
@@ -122,4 +122,6 @@ footer a:hover{color:var(--orange)}
  .lead{font-size:17px}
  .page-hero p{font-size:16px}
  .split h2,.band h2{font-size:28px!important}
+ .hero{background-position:center,64% center}
+ .visual-box{min-height:300px}
 }
